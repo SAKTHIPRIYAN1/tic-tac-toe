@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link id='fa' rel="shortcut icon" href="lg2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="start()">
+    <header id="head">
+        <i class="fa-solid fa-bars" id="mnu"></i>
+        <button  class="h_b" id="abt" onclick="det(0)">About</button>
+        <div class="tpp">
+        <h1 id="tp">TIC TAC TOE</h1>
+    </div>
+        <div class="ic">
+            <button class="h_b"  id="rul" onclick="det(1)">Rules</button>
+        <button class="h_b"  id="rec"  onclick="start()">Mode</button>
+        <i  class="fa-solid fa-volume-high" id="spk"></i>
+        </div>
+    </header>
+    <div class="mnu_di ">
+        <i class="fa-solid fa-x" id="x"></i>
+        <button  class="h_b_" id="abt_"  onclick="det(0)" >About</button>
+        <button class="h_b_" id="rul_" onclick="det(1)" >Rules</button>
+        <button class="h_b_"  id="rec_" onclick="start()" >Modes</button>
+    </div>
+    <div class="mnu_msg ">
+        <i class="fa-solid fa-arrow-left" id="lt_ar"></i>
+        <div class="det_con none">
+                <h2 class="det_h">About</h2>
+                <div class="abt">
+                    <ul>
+                        <li class="li"> Tic Tac Toe is a classic two-player game that requires strategic thinking and planning to outwit your opponent.</li>
+
+                        <li class="li"> The game can be played using just a simple grid and X and O markers, making it easily accessible and playable anywhere.</li>
+
+                        <li class="li">An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time) and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing</li>
+
+                        <li class="li"> Due to its straightforward nature and limited number of moves, Tic Tac Toe games are usually quick to play, making it an ideal choice for a short and engaging activity.</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="det_con ">
+            <h2 class="det_h">Rules</h2>
+            <div class="abt">
+                <ul>
+                    <li class="li">
+                         Tic Tac Toe is played on a 3x3 grid, providing 9 cells for gameplay.
+                    </li>
+
+                    <li class="li">
+                         Two players participate, one using "X" and the other using "O," taking turns to mark empty cells.
+                    </li>
+
+                    <li class="li">
+                     The goal is to form a horizontal, vertical, or diagonal line of three of your own markers.
+                    </li>
+
+                    <li class="li">
+                         Players alternate turns, placing their marker in an empty cell during each turn until a player wins or the grid is filled, resulting in a draw.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="det_con none">
+            <h2 class="det_h">Records</h2>
+        </div>
+    </div>
+    <main class="main">
+       
+        <div class="brd brd_x">
+            <div class="cll " id="0"></div>
+            <div class="cll  b" id="1"></div>
+            <div class="cll c" id="2"></div>
+            <div class="cll d" id="3"></div>
+            <div class="cll e" id="4"></div>
+            <div class="cll f" id="5"></div>
+            <div class="cll g" id="6"></div>
+            <div class="cll h" id="7"></div>
+            <div class="cll i" id="8"></div>
+        </div>
+      
+    </main>
+    <div class="pop">
+        <div class="con" >
+            <div class="s" >
+                <p class="ch">your choice</p>
+                    <div class="choice">
+                        
+                        <div class="x_div sel  symb" onclick="choose_sym(0)">
+                       X
+                        </div>
+                        
+                        <div class="o_div sel_n symb" onclick="choose_sym(1)">
+                            
+                    </div>
+                    </div>
+            <!-- <i class="fa-solid fa-circle-xmark" onclick="clo()" id="cl"></i> -->
+                <div class="ques">
+                    <p class="ch">choose opponent</p>
+                    <div class="opp">
+                <button style="margin-left: 40px;" onclick="mode(0)" class="sel bt">PLAYER</button>
+                <button style="margin-left: 40px;" onclick="mode(1)" class="bt">COMPUTER</button>
+            </div>
+            </div>
+            <p  class="ch st" onclick="start_game()" >Start game</p>
+
+       
+            </div>
+        </div>
+
+    </div>
+    <div class="pop2">
+    <div class="win_msg none">
+    </div>
+    </div>
+    <script src="indx.js"></script>
+</body>
+</html>
